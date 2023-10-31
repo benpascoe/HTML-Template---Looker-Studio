@@ -1,0 +1,23 @@
+{
+    "name": "HTML Template",
+    "organization": "Ben Pascoe",
+    "description": "Render a simple html based template with the metrics that are provided",
+    "logoUrl": "https://storage.googleapis.com/html_template/html_template.png",
+    "supportUrl": "",
+    "privacyPolicyUrl": "",
+    "termsOfServiceUrl": "",
+    "packageUrl": "",
+    "organizationUrl": "https://benpascoe.co.uk",
+    "devMode": true,
+    "components": [{
+        "id": "html_template",
+        "name": "HTML Template",
+        "description": "Render a simple html based template with the metrics that are provided",
+        "iconUrl": "https://storage.googleapis.com/html_template/html_template.png",
+        "resource": {
+            "js": "gs://html_template/index.js",
+            "config": "gs://html_template/index.json",
+            "css": "gs://html_template/index.css"
+        }
+    }]
+}
