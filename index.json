@@ -1,0 +1,214 @@
+{
+    "data": [{
+        "id": "concepts",
+        "label": "KPI Card Values",
+        "elements": [{
+                "id": "currentMetric",
+                "label": "Current metric",
+                "type": "METRIC",
+                "options": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            {
+                "id": "comparisonMetric",
+                "label": "Comparison metric(s)",
+                "type": "METRIC",
+                "options": {
+                    "min": 0,
+                    "max": 50
+                }
+            },
+            {
+                "id": "titleMetric",
+                "label": "Optional title metric",
+                "type": "METRIC",
+                "options": {
+                    "min": 0,
+                    "max": 1
+                }
+            }
+        ]
+    }],
+    "style": [{
+        "id": "missingDataSection",
+        "label": "Missing Data",
+        "elements": [{
+            "type": "SELECT_SINGLE",
+            "id": "missingData",
+            "label": "Missing Data",
+            "options": [{
+                "label": "Show \"No data\"",
+                "value": "No data"
+            }, {
+                "label": "Show \"0\"",
+                "value": "0"
+            }, {
+                "label": "Show \"-\"",
+                "value": "-"
+            }, {
+                "label": "Show \"null\"",
+                "value": "null"
+            }, {
+                "label": "Show \" \" (blank)",
+                "value": " "
+            }],
+            "defaultValue": "No data"
+        }]
+    }, {
+        "id": "padding",
+        "label": "Padding",
+        "elements": [{
+            "type": "SELECT_SINGLE",
+            "id": "leftPadding",
+            "label": "Left",
+            "options": [{
+                "label": "0px",
+                "value": "0px"
+            }, {
+                "label": "4px",
+                "value": "4px"
+            }, {
+                "label": "5px",
+                "value": "5px"
+            }, {
+                "label": "8px",
+                "value": "8px"
+            }, {
+                "label": "10px",
+                "value": "10px"
+            }, {
+                "label": "10px",
+                "value": "10px"
+            }, {
+                "label": "16px",
+                "value": "16px"
+            }, {
+                "label": "24px",
+                "value": "24px"
+            }, {
+                "label": "32px",
+                "value": "32px"
+            }, {
+                "label": "36px",
+                "value": "36px"
+            }, {
+                "label": "48px",
+                "value": "48px"
+            }, {
+                "label": "72px",
+                "value": "72px"
+            }, {
+                "label": "96px",
+                "value": "96px"
+            }],
+            "defaultValue": "24px"
+        }, {
+            "type": "SELECT_SINGLE",
+            "id": "rightPadding",
+            "label": "Right",
+            "options": [{
+                "label": "0px",
+                "value": "0px"
+            }, {
+                "label": "4px",
+                "value": "4px"
+            }, {
+                "label": "5px",
+                "value": "5px"
+            }, {
+                "label": "8px",
+                "value": "8px"
+            }, {
+                "label": "10px",
+                "value": "10px"
+            }, {
+                "label": "10px",
+                "value": "10px"
+            }, {
+                "label": "16px",
+                "value": "16px"
+            }, {
+                "label": "24px",
+                "value": "24px"
+            }, {
+                "label": "32px",
+                "value": "32px"
+            }, {
+                "label": "36px",
+                "value": "36px"
+            }, {
+                "label": "48px",
+                "value": "48px"
+            }, {
+                "label": "72px",
+                "value": "72px"
+            }, {
+                "label": "96px",
+                "value": "96px"
+            }],
+            "defaultValue": "24px"
+        }, {
+            "type": "SELECT_SINGLE",
+            "id": "topPadding",
+            "label": "Top",
+            "options": [{
+                "label": "0px",
+                "value": "0px"
+            }, {
+                "label": "4px",
+                "value": "4px"
+            }, {
+                "label": "5px",
+                "value": "5px"
+            }, {
+                "label": "8px",
+                "value": "8px"
+            }, {
+                "label": "10px",
+                "value": "10px"
+            }, {
+                "label": "10px",
+                "value": "10px"
+            }, {
+                "label": "16px",
+                "value": "16px"
+            }, {
+                "label": "24px",
+                "value": "24px"
+            }, {
+                "label": "32px",
+                "value": "32px"
+            }, {
+                "label": "36px",
+                "value": "36px"
+            }, {
+                "label": "48px",
+                "value": "48px"
+            }, {
+                "label": "72px",
+                "value": "72px"
+            }, {
+                "label": "96px",
+                "value": "96px"
+            }],
+            "defaultValue": "8px"
+        }]
+    }, {
+        "id": "textModeSection",
+        "label": "Text Mode",
+        "elements": [{
+            "type": "CHECKBOX",
+            "id": "textModeVisibility",
+            "label": "Show text mode",
+            "defaultValue": true
+        }, {
+            "type": "TEXTAREA",
+            "id": "textMode",
+            "label": "Text Mode",
+            "defaultValue": "<p>1: {currentMetric} </p>\n<p>2 {comparisonMetric1}</p>\n<p>3 {comparisonMetric2}</p>"
+        }]
+    }
+]
+}
