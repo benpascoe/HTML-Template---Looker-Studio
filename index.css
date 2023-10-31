@@ -1,0 +1,58 @@
+body {
+    font-family: Roboto;
+}
+
+code {
+    background-color: #fdf6e3;
+    color: #586e75;
+}
+
+.currentKpiValue {
+    font-size: 28px;
+}
+
+.comparisonMetricDiv {
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* .comparisonMetricName {
+    font-size: 14px;
+}
+
+.comparisonMetricValue {
+    font-size: 14px;
+}
+
+.comparisonMetricDiff {
+    font-size: 14px;
+}
+
+.comparisonMetricVar {
+    font-size: 14px;
+} */
+
+#container {
+    padding: 8px 24px
+}
+
+#kpiTitle {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.increase {
+    color: green;
+}
+
+.decrease {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {}
